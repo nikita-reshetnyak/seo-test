@@ -1,8 +1,9 @@
 {
   "name": "card-list",
   "version": "0.1.0",
-  "homepage": "https://cosmetics-react.com/",
+  "homepage": "https://courageous-crumble-d0d48b.netlify.app",
   "private": true,
+  
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -12,13 +13,15 @@
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
+    "sitemap": "^7.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && node src/sitemap.js ",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sitemap": "babel-node src/sitemap.js"
   },
   "eslintConfig": {
     "extends": [

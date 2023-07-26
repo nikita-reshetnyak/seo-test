@@ -5,8 +5,8 @@ import Navbar from './components/Navbar/Navbar';
 import MainPage from './pages/MainPage/MainPage';
 import ListPage from './pages/ListPage/ListPage';
 
+
 function App() {
- 
   return (
     <div className="App">
       <Navbar />
