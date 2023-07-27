@@ -1,9 +1,13 @@
+import {Helmet} from "react-helmet-async";
 import Cards from "../../components/Cards/Cards";
-import SEO from "../../components/SEO/SEO";
 
 const ListPage = () => (
 <>
-<SEO seo={{title: 'Вся косметика', description: 'Большой выбор косметики'}}/>
+<Helmet>
+  <title>Вся косметика</title>
+  <meta name="description" content="Большой выбор косметики"/>
+  <link rel="canonical" href="/list" />
+</Helmet>
 <Cards />
 </>
 

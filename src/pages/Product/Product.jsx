@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { cards } from '../../api';
 import SEO from '../../components/SEO/SEO';
+import { generateString } from '../../generateText';
 import styles from './Product.module.scss';
 const Product = () => {
   const {cardId} = useParams();
@@ -15,7 +16,7 @@ const Product = () => {
   
   return (
     <>
-    <SEO seo={product.seo} />
+    <SEO seo={product.seo} id={product.id} />
     <div className={styles.wrapper}>
        <div className={styles.header}>
         <div className={styles.head}>
@@ -27,8 +28,8 @@ const Product = () => {
           </h1>
         </div>
        </div>
-       <div className={styles.body}>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, atque architecto explicabo nam nesciunt expedita optio soluta vel blanditiis voluptate debitis omnis tenetur suscipit, veniam molestiae assumenda odio eius facere!
+       <div style={{maxWidth: '80%', wordWrap: 'break-word'}} className={styles.body}>
+       {generateString(1000)}
        </div>
        <div className={styles.footer}></div>
     </div>
