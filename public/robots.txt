@@ -1,4 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+Sitemap: https://scintillating-biscotti-625947.netlify.app/sitemap.xml
 
